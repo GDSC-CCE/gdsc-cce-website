@@ -1,17 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
+import { ThemeProvider} from "styled-components";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+const Background = styled.div`
+    width: 100vw;
+    background-color: ${props => props.theme.bg};
+`;
+
+const ContentWrapper = styled.div`
+    max-width: 1200px;
+    background-color: inherit;
+    margin: auto;
+`;
+
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            isDark: false,
+        };
+    }
+
+    render() {
+        return (
+            <Background>
+                <ContentWrapper>
+                    <Router>
+                        <h1>Hello World</h1>
+                    </Router>
+                </ContentWrapper>
+            </Background>
+        );
+    }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App />,
+    document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
