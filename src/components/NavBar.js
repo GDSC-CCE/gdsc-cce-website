@@ -14,23 +14,23 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
 
   z-index: 9;
-  box-shadow: 1px 1px 2px #cccccc;
 
   background-color: inherit;
 `;
+//box-shadow: 1px 1px 2px #cccccc;
 
 const Ul = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-width: 300px;
-  flex-grow: 0.2;
+  flex-grow: 0.1;
   background-color: ${(props) => props.theme.bg};
   @media (max-width: 850px) {
     display: none;

@@ -1,10 +1,9 @@
 import Page from "../elements/Page";
 import styled, {useTheme} from "styled-components";
-//import Tagline from "../elements/Tagline";
+import Tagline from "../elements/Tagline";
 import classlogo from "../images/class.svg";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const Tagline = styled.div``; 
 const OldContainer = styled.div`
     height: 100vh;
     width: 100%;
@@ -33,9 +32,12 @@ const TopSection = styled.div`
     flex-direction: row;
     align-content: space-space-around;
     margin-bottom: 50px;
+    position: relative;
+    bottom:30px;
     @media (max-width: 1050px) {
         margin-bottom: 100px;
-    }
+    };
+    
 `;
 const RightWrapper = styled.img`
     display: flex;
