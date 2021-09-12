@@ -11,11 +11,14 @@ const Background = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-    max-width: 1200px;
     background-color: inherit;
     margin: auto;
     width: 100%;
     height: 100%;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 `;
 
 class App extends React.Component {
@@ -46,10 +49,10 @@ class App extends React.Component {
     };
         return (
           <ThemeProvider theme={theme} >
-                <ContentWrapper>
                     <Router>
-                    </Router>
+                <ContentWrapper>
                 </ContentWrapper>
+                    </Router>
           </ThemeProvider>
         );
     }
