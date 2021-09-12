@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
-import { ThemeProvider} from "styled-components";
+import styled, {ThemeProvider} from "styled-components";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 const Background = styled.div`
     width: 100vw;
+    height: 100vh;
     background-color: ${props => props.theme.bg};
 `;
 
@@ -13,6 +14,8 @@ const ContentWrapper = styled.div`
     max-width: 1200px;
     background-color: inherit;
     margin: auto;
+    width: 100%;
+    height: 100%;
 `;
 
 class App extends React.Component {
@@ -22,16 +25,32 @@ class App extends React.Component {
             isDark: false,
         };
     }
+    handleClick() {
+      this.setState({isDark: !this.state.isDark});
+  }
 
     render() {
+      let theme = {
+      bg: this.state.isDark? "#121212" : "white",
+      text: this.state.isDark? "white" : "black",
+      textAlt: this.state.isDark? "#444" : "#aeaeae",
+      blue: "#4285f4",
+      red: "#ea4335",
+      yellow: "#fbbc04",
+      green: "#34a853",
+      blueAlt: "#e3f2fd",
+      redAlt: "#ffebee",
+      yellowAlt: "#fff8e1",
+      greenAlt: "#e8f5e9",
+
+    };
         return (
-            <Background>
+          <ThemeProvider theme={theme} >
                 <ContentWrapper>
                     <Router>
-                        <h1>Hello World</h1>
                     </Router>
                 </ContentWrapper>
-            </Background>
+          </ThemeProvider>
         );
     }
 }
