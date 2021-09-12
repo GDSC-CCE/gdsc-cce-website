@@ -113,7 +113,7 @@ const BottomWrapper = styled.a`
 function Home(props) {
     const theme = useTheme();
     return (
-        <Container id={props.id}>
+        <Container id="home">
             <TopSection>
                 <LeftWrapper>
                     <Heading>Google Developers Student Clubs</Heading>
