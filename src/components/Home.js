@@ -20,6 +20,7 @@ const OldContainer = styled.div`
 `;
 
 const Container= styled(Page)`
+    position: relative;
 `;
 
 const TopSection = styled.div`

@@ -4,6 +4,7 @@ export default styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     background-color: ${props => props.theme.bg};
 

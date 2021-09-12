@@ -4,6 +4,7 @@ import styled, {ThemeProvider} from "styled-components";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
+import Events from "./components/EventHome";
 
 
 const Background = styled.div`
@@ -60,6 +61,7 @@ class App extends React.Component {
                         iconColor={theme.text}
                     ></NavBar>
                     <Home />
+                    <Events />
                 </ContentWrapper>
                     </Router>
           </ThemeProvider>
