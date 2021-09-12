@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import styled, {ThemeProvider} from "styled-components";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 
 
 const Background = styled.div`
@@ -58,6 +59,7 @@ class App extends React.Component {
                         onClick={() => this.handleClick()} 
                         iconColor={theme.text}
                     ></NavBar>
+                    <Home />
                 </ContentWrapper>
                     </Router>
           </ThemeProvider>

@@ -10,5 +10,7 @@ export default styled.div`
     width: 100vw;
     height: 100vh;
 
+    padding-top: 80px;
+
     scroll-snap-align: start;
 `;
