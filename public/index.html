@@ -10,21 +10,40 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      *{
+      * {
         font-family: Rubik;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        text-decoration: none !important;
         /* border: black solid 1px; */
       }
       html {
         scroll-behavior: smooth;
       }
-      #root{
+      #root {
         width: 100vw;
         height: 100vh;
+      }
+
+      .active {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        padding-bottom: 20px;
+        z-index: 9;
+      }
+      .active > a {
+        border: none !important;
+        width: 110%;
       }
     </style>
     <!--

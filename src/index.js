@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import styled, {ThemeProvider} from "styled-components";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 
 const Background = styled.div`
@@ -15,6 +16,7 @@ const ContentWrapper = styled.div`
     margin: auto;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     
     overflow-y: scroll;
     overflow-x: hidden;
@@ -26,6 +28,7 @@ class App extends React.Component {
         super();
         this.state = {
             isDark: false,
+            isHome: false
         };
     }
     handleClick() {
@@ -51,6 +54,10 @@ class App extends React.Component {
           <ThemeProvider theme={theme} >
                     <Router>
                 <ContentWrapper>
+                    <NavBar
+                        onClick={() => this.handleClick()} 
+                        iconColor={theme.text}
+                    ></NavBar>
                 </ContentWrapper>
                     </Router>
           </ThemeProvider>

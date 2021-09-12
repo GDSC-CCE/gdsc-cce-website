@@ -5,7 +5,7 @@ export default styled.div`
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background-color: ${props => props.theme.bg};
 
     width: 100vw;
     height: 100vh;
