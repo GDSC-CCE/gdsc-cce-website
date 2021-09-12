@@ -19,7 +19,7 @@ function TeamHome(props) {
 
 
     const location = useLocation();
-    // Scroll to top if path changes
+    // this is to scroll to top if path changes
     useLayoutEffect(() => {
       window.scrollTo(0, 0);
       console.log('scrolling');

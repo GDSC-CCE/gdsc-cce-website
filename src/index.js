@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Events from "./components/EventHome";
+import TeamHome from "./components/TeamHome";
 
 
 const Background = styled.div`
@@ -62,6 +63,7 @@ class App extends React.Component {
                     ></NavBar>
                     <Home />
                     <Events />
+                    <TeamHome />
                 </ContentWrapper>
                     </Router>
           </ThemeProvider>
