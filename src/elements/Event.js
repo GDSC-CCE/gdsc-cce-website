@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import TimePill from "./Pill";
 const Card = styled.div`
-    margin: 20px 0px;
+    margin-top: 50px;
     height: min-content;
     width: 274px;
     padding: 10px;

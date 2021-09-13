@@ -1,4 +1,4 @@
-import styled, { ThemeConsumer, ThemeContext } from "styled-components";
+import styled, { ThemeContext } from "styled-components";
 import { useContext } from "react";
 
 const CButton = styled.a`
