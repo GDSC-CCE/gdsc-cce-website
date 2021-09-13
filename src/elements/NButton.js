@@ -36,7 +36,6 @@ function Button(props) {
     hovercolor: props.hovercolor || theme.text,
     hovertextcolor: props.hovercolor===undefined ? (theme.text==="white" ? "black":"white") : "white",
   };
-  console.log(props.hovercolor===undefined);
 
   return (
     <CButton href={props.href} target={props.target} 

@@ -8,6 +8,7 @@ import Events from "./components/EventHome";
 import TeamHome from "./components/TeamHome";
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 
 const ContentWrapper = styled.main`
@@ -68,6 +69,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/">
                 <Home />
+                <About />
                 <Events />
                 <TeamHome />
                 <Footer />
