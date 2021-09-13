@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import TimePill from "./Pill";
 const Card = styled.div`
     margin: 20px 0px;
     height: min-content;
@@ -15,6 +16,7 @@ const Card = styled.div`
     cursor: pointer;
 
     box-shadow: 4px 4px 3px grey;
+    position: relative;
 `;
 
 const Img =styled.div`
@@ -48,6 +50,7 @@ const ButtonAlt = styled.div`
 function Event(props) {
     return(
         <Card>
+            <TimePill>{props.time}</TimePill>
             <Img></Img>
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>

@@ -26,11 +26,13 @@ class Events extends React.Component {
         title="Web Dev Bootcamp"
         description="lorem ipsum dolo ro lorem ispum dolo about dsccce router is defined but never used so do listen this closely..."
         color="green"
+        time="12 JAN"
       />
       <Event
         title="Web Dev Bootcamp"
         description="lorem ipsum dolo ro lorem ispum dolo about dsccce router is defined but never used so do listen this closely..."
         color="blue"
+        time="Coming Soon"
       />
       <Event
         title="Web Dev Bootcamp"
