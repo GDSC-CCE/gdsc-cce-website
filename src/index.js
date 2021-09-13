@@ -45,7 +45,7 @@ class App extends React.Component {
     let theme = {
       bg: this.state.isDark ? "#121212" : "white",
       text: this.state.isDark ? "white" : "black",
-      textAlt: this.state.isDark ? "#444" : "#aeaeae",
+      textAlt: "#808080",
       blue: "#4285f4",
       red: "#ea4335",
       yellow: "#fbbc04",
@@ -54,6 +54,8 @@ class App extends React.Component {
       redAlt: "#ffebee",
       yellowAlt: "#fff8e1",
       greenAlt: "#e8f5e9",
+      elevatedbg:"hsla(0,0%,100%,.01)",
+      isDark: this.state.isDark
     };
     return (
       <ThemeProvider theme={theme}>

@@ -9,14 +9,20 @@ const Card = styled.div`
     border-radius: 10px;
     border: 2px solid ${props => props.theme.text};
 
+    background-color: ${props => props.theme.elevatedbg};
 
     display:grid;
     grid-row-gap: 10px;
 
     cursor: pointer;
 
-    box-shadow: 4px 4px 3px grey;
     position: relative;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  :hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.3);
+  }
 `;
 
 const Img =styled.div`
