@@ -21,7 +21,7 @@ function Team(props) {
     const location = useLocation();
     // this is to scroll to top if path changes
     useLayoutEffect(() => {
-      window.scrollTo(0, 0);
+      document.querySelector('main').scrollTo(0, 0);
       console.log('scrolling');
     }, [location.pathname]);
 
