@@ -62,15 +62,15 @@ class App extends React.Component {
             <NavBar
               onClick={() => this.handleClick()}
               iconColor={theme.text}
-            ></NavBar>
+            />
             <Switch>
               <Route exact path="/">
                 <Home />
                 <Events />
                 <TeamHome />
+                <Footer />
               </Route>
               <Route exact path="/team" component={Team} />
-              <Route exact path="/footer" component={Footer} />
             </Switch>
           </ContentWrapper>
         </Router>

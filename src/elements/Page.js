@@ -14,4 +14,6 @@ export default styled.div`
     padding-top: 80px;
 
     scroll-snap-align: start;
+
+    position: relative;
 `;
