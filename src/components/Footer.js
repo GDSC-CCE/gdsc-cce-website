@@ -110,7 +110,7 @@ function Footer(props) {
         <Page>
             <Topdiv> 
                 <JoinText>Shall we Start ? </JoinText>
-                <Button hovercolor="black">Join Us</Button>
+                <Button to={{ pathname: "https://www.google.com" }} target="_blank" hovercolor="black">Join Us</Button>
             </Topdiv>
             <Fdiv>
                 <Icons >
