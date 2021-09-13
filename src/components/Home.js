@@ -122,7 +122,7 @@ function Home(props) {
                 </LeftWrapper>
                 <RightWrapper src={classlogo} alt="online class image" />
             </TopSection>
-            <BottomWrapper href="#eventhome">
+            <BottomWrapper href="#about">
                 <Tagline />
                 <ExpandMoreIcon style={{alignSelf:"center",color:theme.text }} />
             </BottomWrapper>

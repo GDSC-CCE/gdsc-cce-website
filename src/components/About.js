@@ -134,7 +134,7 @@ const ECard = styled.div`
 
   const Multi = (
     <>
-    <Page>
+    <Page id="about">
       <LeftWrapper>
         Who are we ?
         <Circle>
@@ -157,7 +157,7 @@ const ECard = styled.div`
     </>
   );
   const Single = (
-    <Page>
+    <Page id="about">
       <LeftWrapper>
         Who are we ?
       <Cwrapper>
