@@ -78,6 +78,9 @@ class NavBar extends React.Component {
   handleClick() {
     document.querySelector("#navlist").classList.toggle("active");
   }
+  closeMenu() {
+    document.querySelector("#navlist").classList.remove("active");
+  }
   render() {
     return (
       <Nav>
@@ -85,14 +88,14 @@ class NavBar extends React.Component {
           <Logo isMobile={this.state.isMobile}></Logo>
         </Link>
         <Ul id="navlist">
-          <Button to="/events" onClick={() => this.handleClick()} hovercolor="#34a853">
+          <Button to="/events" onClick={() => this.closeMenu()} hovercolor="#34a853">
             Events
           </Button>
-          <Button to="/team" onClick={() => this.handleClick()} hovercolor="#EA4335">
+          <Button to="/team" onClick={() => this.closeMenu()} hovercolor="#EA4335">
             Team
           </Button>
-          <Button to="/projects" onClick={() => this.handleClick()} hovercolor="#fbbc04">Projects</Button>
-          <Button hovercolor="#4285f4" onClick={() => this.handleClick()} active>
+          <Button to="/projects" onClick={() => this.closeMenu()} hovercolor="#fbbc04">Projects</Button>
+          <Button hovercolor="#4285f4" onClick={() => this.closeMenu()} active>
             Join Us
           </Button>
           <WbSunny
