@@ -14,6 +14,7 @@ const Page = styled(CPage)`
     font-size: 30px;
     font-weight: 500;
   }
+  color: ${props => props.theme.text};
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,6 +46,10 @@ const Circle = styled.div`
 
   padding: 30px;
 
+  transition: 0.1s;
+  :hover{
+    transform:scale(1.03);
+  }
 `;
 const Cwrapper = styled.div`
 
@@ -54,6 +59,7 @@ const Ctext = styled.p`
 font-weight: 400;
   margin: 10px 0;
   font-size: 18px;
+  padding:10;
   @media (max-width: 700px) {
     font-size: 3vw;
   }
@@ -99,7 +105,10 @@ const ECard = styled.div`
     height: 170px;
     font-size: 25px;
   }
-
+  transition: 0.1s;
+  :hover{
+    transform:scale(1.05);
+  }
 
   display: flex;
   justify-content: center;

@@ -16,6 +16,7 @@ const Fdiv = styled.footer`
 
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    @media(max-width: 500px) {border-radius: 0;}
     background-color: #1c1c1c;
     
     position: absolute;
@@ -96,6 +97,11 @@ const Topdiv=styled.div`
 
     padding-bottom: 50vh;
     padding-top: 80px;
+    a {
+        @media(min-width:1200px) {
+            transform: scale(1.15);
+        }
+    }
 `;
 
 const JoinText = styled.p`
@@ -103,13 +109,14 @@ const JoinText = styled.p`
     font-size: 45px;
     margin: 20px 0;
     color: ${props => props.theme.text};
+    @media(max-width: 600px) {font-size: 7vw;}
 `;
 
 function Footer(props) {
     return (
         <Page>
             <Topdiv> 
-                <JoinText>Shall we Start ? </JoinText>
+                <JoinText>What are you waiting for ? </JoinText>
                 <NButton href={"https://www.google.com"} target="_blank" >Join Us</NButton>
             </Topdiv>
             <Fdiv>
