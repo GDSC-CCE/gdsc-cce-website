@@ -21,7 +21,7 @@ const Container = styled(Page)`
 class Events extends React.Component {
   render() {
     return (
-        <Container id={this.props.id}>
+        <Container id="eventhome">
       <Event
         title="Web Dev Bootcamp"
         description="lorem ipsum dolo ro lorem ispum dolo about dsccce router is defined but never used so do listen this closely..."

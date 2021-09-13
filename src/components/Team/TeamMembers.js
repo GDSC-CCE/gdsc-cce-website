@@ -37,7 +37,7 @@ function getTeam(group) {
 }
 
 
-function TechTeam() {
+function TeamMembers() {
   const theme = useTheme();
   let teamsections = [];
   const teambanner = {
@@ -69,4 +69,4 @@ function TechTeam() {
   return teamsections;
 }
 
-export default TechTeam;
+export default TeamMembers;

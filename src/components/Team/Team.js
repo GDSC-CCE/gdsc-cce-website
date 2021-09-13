@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TechTeam from './TechTeam';
+import TeamMembers from './TeamMembers';
 import { useLocation } from 'react-router';
 import { useLayoutEffect } from 'react';
 
@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 
 
-function TeamHome(props) {
+function Team(props) {
 
 
     const location = useLocation();
@@ -26,10 +26,10 @@ function TeamHome(props) {
     }, [location.pathname]);
 
     return(
-        <Container id="props.id">
-<TechTeam />
+        <Container id="team">
+<TeamMembers />
         </Container>
     );
 }
 
-export default TeamHome;
+export default Team;

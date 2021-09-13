@@ -21,7 +21,7 @@ const Nav = styled.nav`
 
   z-index: 9;
 
-  background-color: inherit;
+  background-color: ${props => props.theme.bg};
 `;
 //box-shadow: 1px 1px 2px #cccccc;
 
