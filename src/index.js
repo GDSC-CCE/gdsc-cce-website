@@ -20,6 +20,13 @@ const ContentWrapper = styled.main`
   overflow-x: hidden;
   scroll-behavior: smooth;
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  --ms-overflow-style: none;
+  scrollbar-width: none;
+
 `;
 
 class App extends React.Component {
