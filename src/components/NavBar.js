@@ -85,14 +85,14 @@ class NavBar extends React.Component {
           <Logo isMobile={this.state.isMobile}></Logo>
         </Link>
         <Ul id="navlist">
-          <Button to="/events" hovercolor="#34a853">
+          <Button to="/events" onClick={() => this.handleClick()} hovercolor="#34a853">
             Events
           </Button>
-          <Button to="/team" hovercolor="#EA4335">
+          <Button to="/team" onClick={() => this.handleClick()} hovercolor="#EA4335">
             Team
           </Button>
-          <Button to="/projects" hovercolor="#fbbc04">Projects</Button>
-          <Button hovercolor="#4285f4" active>
+          <Button to="/projects" onClick={() => this.handleClick()} hovercolor="#fbbc04">Projects</Button>
+          <Button hovercolor="#4285f4" onClick={() => this.handleClick()} active>
             Join Us
           </Button>
           <WbSunny

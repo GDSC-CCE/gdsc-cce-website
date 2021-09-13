@@ -22,7 +22,7 @@ const CButton = styled.a`
     background-color: ${(props) => props.hovercolor};
     border-color: ${(props) => props.hovercolor};
     color: ${(props) => props.hovertextcolor};
-    ${(props) => {return props.active=="true" ? "transform: scale(1.05);" : null}};
+    ${(props) => {return props.active==="true" ? "transform: scale(1.05);" : null}};
   }
 `;
 
@@ -33,17 +33,22 @@ function Button(props) {
     bg: active ? props.hovercolor : theme.bg,
     color: active ? props.hovertextcolor || "white" : theme.text,
     border: active ? props.hovercolor : theme.text,
+    hovercolor: props.hovercolor || theme.text,
+    hovertextcolor: props.hovercolor===undefined ? (theme.text==="white" ? "black":"white") : "white",
   };
+  console.log(props.hovercolor===undefined);
 
   return (
-    <CButton 
+    <CButton href={props.href} target={props.target} 
      to={props.to}
      bg={mytheme.bg}
      color={mytheme.color}
      border={mytheme.border}
-     hovercolor={props.hovercolor}
-     hovertextcolor={props.hovertextcolor || "white"}
+     hovercolor={mytheme.hovercolor}
+     hovertextcolor={mytheme.hovertextcolor}
      active={active ? "true": "false"}
+     
+     onClick={props.onClick}
      >
       {props.children}
     </CButton>

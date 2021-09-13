@@ -1,7 +1,7 @@
 import CPage from "../elements/Page";
 import styled from "styled-components";
 import { Copyright, Twitter,LinkedIn, GitHub, YouTube, Instagram } from "@material-ui/icons";
-import Button from "../elements/Button";
+import NButton from "../elements/NButton";
 
 const Page=styled(CPage)`
     padding:0;
@@ -110,7 +110,7 @@ function Footer(props) {
         <Page>
             <Topdiv> 
                 <JoinText>Shall we Start ? </JoinText>
-                <Button to={{ pathname: "https://www.google.com" }} target="_blank" hovercolor="black">Join Us</Button>
+                <NButton href={"https://www.google.com"} target="_blank" >Join Us</NButton>
             </Topdiv>
             <Fdiv>
                 <Icons >
