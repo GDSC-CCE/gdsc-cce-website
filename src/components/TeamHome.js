@@ -4,21 +4,6 @@ import teamimage from "../images/team.svg";
 import { Link } from "react-router-dom";
 import Page from "../elements/Page";
 
-const MContainer = styled.div`
-  height: 100vh;
-  background-color: ${(props) => props.theme.bg};
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 80px;
-  scroll-snap-align: start;
-  @media (max-width: 1050px) {
-    padding-top: 0;
-  }
-  min-height: 650px;
-  scroll-behavior: smooth;
-`;
 
 const Container = styled(Page)`
     flex-direction: column;
@@ -38,6 +23,7 @@ function Team(props) {
       <TeamImg src={teamimage} alt="team-illustration" />
       <Link to="/team" style={{ textDecoration: "none" }}>
         <Button
+          to="/team"
           hovercolor={theme.text}
           hovertextcolor={theme.bg}
           style={{ width: "110px" }}

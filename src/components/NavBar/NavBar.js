@@ -3,6 +3,7 @@ import styled from "styled-components";
 import React from "react";
 
 import Button from "../../elements/Button";
+import NButton from "../../elements/NButton";
 import Logo from "./NavLogo";
 import { WbSunny } from "@material-ui/icons";
 
@@ -21,7 +22,7 @@ const Nav = styled.nav`
 
   z-index: 9;
 
-  background-color: ${props => props.theme.bg};
+  background-color: ${(props) => props.theme.bg};
   @media (max-width: 850px) {
     height: 70px;
   }
@@ -91,16 +92,37 @@ class NavBar extends React.Component {
           <Logo isMobile={this.state.isMobile}></Logo>
         </Link>
         <Ul id="navlist">
-          <Button to="/events" onClick={() => this.closeMenu()} hovercolor="#34a853">
+          <Button
+            to="/events"
+            onClick={() => this.closeMenu()}
+            hovercolor="#34a853"
+          >
             Events
           </Button>
-          <Button to="/team" onClick={() => this.closeMenu()} hovercolor="#EA4335">
+          <Button
+            to="/team"
+            onClick={() => this.closeMenu()}
+            hovercolor="#EA4335"
+          >
             Team
           </Button>
-          <Button to="/projects" onClick={() => this.closeMenu()} hovercolor="#fbbc04">Projects</Button>
-          <Button hovercolor="#4285f4" onClick={() => this.closeMenu()} active>
+          <NButton
+            href=""
+            target="_blank"
+            onClick={() => this.closeMenu()}
+            hovercolor="#fbbc04"
+          >
+            Projects
+          </NButton>
+          <NButton
+            href="https://gdsc.community.dev/christ-college-of-engineering-thrissur/"
+            target="_blank"
+            hovercolor="#4285f4"
+            onClick={() => this.closeMenu()}
+            active
+          >
             Join Us
-          </Button>
+          </NButton>
           <WbSunny
             style={{
               color: this.props.iconColor,

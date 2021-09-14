@@ -4,20 +4,6 @@ import Tagline from "../elements/Tagline";
 import classlogo from "../images/class.svg";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const OldContainer = styled.div`
-    height: 100vh;
-    width: 100%;
-    background-color: ${props => props.theme.bg};
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top:40px;
-    scroll-snap-align: start;
-    @media (max-width: 1050px) {
-        padding-top:0;
-    }
-    min-height:650px;
-`;
 
 const Container= styled(Page)`
     position: relative;

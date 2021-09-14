@@ -14,6 +14,7 @@ function nextColor() {
 }
 
 const events = data.reverse();
+console.log(events);
 let Past=[],
   Upcoming=[],
   Recent = [];
@@ -76,6 +77,6 @@ for (const e of events) {
     );
   }
 }
-Recent = Recent.slice(0, 3).reverse();
+Recent = Recent.slice(0, 3);
 
 export { Recent, Upcoming, Past };

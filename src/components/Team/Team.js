@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import TeamMembers from './TeamMembers';
-import { useLocation } from 'react-router';
 import { useLayoutEffect } from 'react';
 
 
@@ -18,12 +17,11 @@ const Container = styled.div`
 function Team(props) {
 
 
-    const location = useLocation();
     // this is to scroll to top if path changes
     useLayoutEffect(() => {
       document.querySelector('main').scrollTo(0, 0);
       console.log('scrolling');
-    }, [location.pathname]);
+    }, );
 
     return(
         <Container id="team">

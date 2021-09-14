@@ -7,6 +7,9 @@ const Container=styled.div`
 
     padding-top: 80px;
 
+    background-color: ${props => props.theme.bg};
+    color: ${props => props.theme.text};
+
     display: flex;
     justify-content: center;
     align-items: center;

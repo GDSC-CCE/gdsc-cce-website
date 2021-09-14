@@ -37,6 +37,17 @@ const Icons = styled.div`
         font-size:50px;
     }
     color: #5c5c5c;
+    >a {
+        color: inherit;
+        text-decoration: none;
+        :active {
+            color: inherit;
+        }
+        :visited {
+            color: inherit;
+        }
+    }
+    
 
 `;
 
@@ -117,16 +128,16 @@ function Footer(props) {
         <Page>
             <Topdiv> 
                 <JoinText>What are you waiting for ? </JoinText>
-                <NButton href={"https://www.google.com"} target="_blank" >Join Us</NButton>
+                <NButton href={"https://gdsc.community.dev/christ-college-of-engineering-thrissur/"} target="_blank" >Join Us</NButton>
             </Topdiv>
             <Fdiv>
                 <Icons >
                     
-                    <CTwitter  fontSize="inherit"/>
-                    <CInstagram fontSize="inherit" />
-                    <CGitHub fontSize="inherit" />
-                    <CLinkedIn  fontSize="inherit" />
-                    <CYouTube  fontSize="inherit" />
+                    <a href="https://twitter.com/CceGdsc" target="_blank"><CTwitter  fontSize="inherit"/></a>
+                    <a href="https://instagram.com/gdsc_cce" target="_blank"><CInstagram fontSize="inherit" /> </a>
+                    <a href="" target="_blank"><CGitHub fontSize="inherit" /></a>
+                    <a href="https://in.linkedin.com/company/dsc-cce" target="_blank"><CLinkedIn  fontSize="inherit" /></a>
+                    <a href="https://www.youtube.com/channel/UC-HHge7bFtlqvpr-Cc3VW6Q" target="_blank"><CYouTube  fontSize="inherit" /></a>
 
                 </Icons>
                 <FBdiv>

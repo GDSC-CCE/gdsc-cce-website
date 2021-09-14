@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import TimePill from "../../elements/Pill";
+import { useLayoutEffect } from 'react'
+
 const Card = styled.div`
   margin: 0 10px;
   margin-top: 50px;
@@ -56,6 +58,12 @@ const ButtonAlt = styled.div`
 `;
 
 function Event(props) {
+
+  useLayoutEffect(() => {
+    document.querySelector('main').scrollTo(0, 0);
+    console.log('scrolling');
+  },);
+
   return (
     <Card>
       <TimePill>{props.time}</TimePill>
