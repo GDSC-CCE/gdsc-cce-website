@@ -35,11 +35,13 @@ for (const e of events) {
         time={`${date[2]} ${date[1].toUpperCase()}`}
         image={e.image}
         link={e.link}
+        key={e.name}
       />
     );
     if (now < Date.parse(d)) {
       Upcoming.push(
         <Event
+        key={e.name}
           title={e.name}
           description={e.desc}
           color={nextColor()}
@@ -51,6 +53,7 @@ for (const e of events) {
     } else {
       Past.push(
         <Event
+        key={e.name}
           title={e.name}
           description={e.desc}
           color={nextColor()}
@@ -63,6 +66,7 @@ for (const e of events) {
   } else {
     Upcoming.push(
       <Event
+        key={e.name}
         title={e.name}
         description={e.desc}
         color={nextColor()}
@@ -74,6 +78,7 @@ for (const e of events) {
     );
     Recent.push(
       <Event
+        key={e.name}
         title={e.name}
         description={e.desc}
         color={nextColor()}

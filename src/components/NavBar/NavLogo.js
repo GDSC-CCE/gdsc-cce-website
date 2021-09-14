@@ -54,9 +54,10 @@ const LogoContainer = styled.div`
 
 function Logo() {
     const dark=useTheme().isDark;
+    const handleClick= () => document.querySelector('main').scrollTo(0,0);
     return (
         <LogoContainer href="#home">
-            <LogoNoText src={dark ? logoimagedark : logoimage} alt="logo"></LogoNoText> 
+            <LogoNoText onClick = {handleClick} src={dark ? logoimagedark : logoimage} alt="logo"></LogoNoText> 
         </LogoContainer>
         
     );

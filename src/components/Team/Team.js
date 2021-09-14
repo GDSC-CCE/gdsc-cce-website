@@ -20,7 +20,6 @@ function Team(props) {
     // this is to scroll to top if path changes
     useLayoutEffect(() => {
       document.querySelector('main').scrollTo(0, 0);
-      console.log('scrolling');
     }, );
 
     return(

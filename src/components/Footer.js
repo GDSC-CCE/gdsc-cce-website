@@ -182,7 +182,7 @@ function Footer(props) {
           </a>
         </Icons>
         <FBdiv>
-          <Copyright color="white" />
+          <Copyright />
           <CopyText>2021 GDSC CCE. All rights reserved.</CopyText>
         </FBdiv>
       </Fdiv>

@@ -59,7 +59,6 @@ const ButtonAlt = styled.a`
 function Event(props) {
   useLayoutEffect(() => {
     document.querySelector("main").scrollTo(0, 0);
-    console.log("scrolling");
   });
 
   return (

@@ -209,9 +209,6 @@ class About extends React.Component{
     }
     }
     );
-    console.log(this.state.bool);
-    console.log(window.innerWidth);
-    console.log('helo');
     if(this.state.width < 1200) {
       return Multi;
     }

@@ -1,7 +1,6 @@
 import styled, { useTheme } from "styled-components";
 import Button from "../elements/Button";
 import teamimage from "../images/team.svg";
-import { Link } from "react-router-dom";
 import Page from "../elements/Page";
 
 
@@ -17,12 +16,10 @@ const TeamImg = styled.img`
 `;
 function Team(props) {
   const theme = useTheme();
-  console.log(theme);
   return (
     <Container id="teamhome">
       <TeamImg src={teamimage} alt="team-illustration" />
-      <Link to="/team" style={{ textDecoration: "none" }}>
-        <Button
+        <Button 
           to="/team"
           hovercolor={theme.text}
           hovertextcolor={theme.bg}
@@ -30,7 +27,6 @@ function Team(props) {
         >
           Our Team >
         </Button>
-      </Link>
     </Container>
   );
 }
