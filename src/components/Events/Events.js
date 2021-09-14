@@ -12,8 +12,8 @@ function nextColor() {
 }
 
 const events = data;
-let Past=[],
-  Upcoming=[],
+let Past = [],
+  Upcoming = [],
   Recent = [];
 const now = Date.now();
 
@@ -22,9 +22,9 @@ for (const e of events) {
     let d = e.date.split("/");
     d = `${d[1]}/${d[0]}/${d[2]}`;
 
-    const date = (new Date(Date.parse(d))).toString().split(" ");
+    const date = new Date(Date.parse(d)).toString().split(" ");
     if (e.desc.length > 125) {
-      e.desc= e.desc.slice(0,125) + '...';
+      e.desc = e.desc.slice(0, 125) + "...";
     }
 
     Recent.push(
@@ -33,6 +33,8 @@ for (const e of events) {
         description={e.desc}
         color={nextColor()}
         time={`${date[2]} ${date[1].toUpperCase()}`}
+        image={e.image}
+        link={e.link}
       />
     );
     if (now < Date.parse(d)) {
@@ -42,6 +44,8 @@ for (const e of events) {
           description={e.desc}
           color={nextColor()}
           time={`${date[2]} ${date[1].toUpperCase()}`}
+          image={e.image}
+          link={e.link}
         />
       );
     } else {
@@ -51,25 +55,31 @@ for (const e of events) {
           description={e.desc}
           color={nextColor()}
           time={`${date[2]} ${date[1].toUpperCase()}`}
+          image={e.image}
+          link={e.link}
         />
       );
     }
-  }
-  else {
-      Upcoming.push(
-        <Event
-          title={e.name}
-          description={e.desc}
-          color={nextColor()}
-          time={`Coming Soon`}
-        />
-      );
+  } else {
+    Upcoming.push(
+      <Event
+        title={e.name}
+        description={e.desc}
+        color={nextColor()}
+        time={`Coming Soon`}
+        image={e.image}
+        link={e.link}
+        
+      />
+    );
     Recent.push(
       <Event
         title={e.name}
         description={e.desc}
         color={nextColor()}
         time={`Coming Soon`}
+        image={e.image}
+        link={e.link}
       />
     );
   }

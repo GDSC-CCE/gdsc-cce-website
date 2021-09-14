@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import TimePill from "../../elements/Pill";
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect } from "react";
 
 const Card = styled.div`
   margin: 0 10px;
@@ -29,10 +29,9 @@ const Card = styled.div`
   }
 `;
 
-const Img = styled.div`
+const Img = styled.img`
   height: 200px;
   width: 250px;
-  background-color: black;
   border-radius: 10px;
 `;
 const Title = styled.h3`
@@ -45,7 +44,7 @@ const Description = styled.p`
   color: ${(props) => props.theme.textAlt};
   min-height: 70px;
 `;
-const ButtonAlt = styled.div`
+const ButtonAlt = styled.a`
   margin: 10px;
   padding: 10px 20px;
   color: ${(props) => props.theme[props.color]};
@@ -58,19 +57,25 @@ const ButtonAlt = styled.div`
 `;
 
 function Event(props) {
-
   useLayoutEffect(() => {
-    document.querySelector('main').scrollTo(0, 0);
-    console.log('scrolling');
-  },);
+    document.querySelector("main").scrollTo(0, 0);
+    console.log("scrolling");
+  });
 
   return (
     <Card>
       <TimePill>{props.time}</TimePill>
-      <Img></Img>
+      <Img src={props.image} alt="event image"></Img>
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
-      <ButtonAlt color={props.color}>Join Now</ButtonAlt>
+      <ButtonAlt
+        href={props.link}
+        target="_blank"
+        rel="noreferrer"
+        color={props.color}
+      >
+        Join Now
+      </ButtonAlt>
     </Card>
   );
 }
