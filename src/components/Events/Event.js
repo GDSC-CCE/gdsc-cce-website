@@ -14,11 +14,6 @@ const Card = styled.div`
 
   display: inline-grid;
   grid-row-gap: 10px;
-  @media (max-width: 900px) {
-    :nth-child(odd) {
-      display: none;
-    }
-  }
 
   cursor: pointer;
 

@@ -10,6 +10,11 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
+  @media (max-width: 900px) {
+    >div:nth-child(odd) {
+      display: none;
+    }
+  }
   width: 100vw;
 `;
 
