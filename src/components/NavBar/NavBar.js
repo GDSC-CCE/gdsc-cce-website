@@ -109,6 +109,7 @@ class NavBar extends React.Component {
           <NButton
             href=""
             target="_blank"
+            rel="noreferrer"
             onClick={() => this.closeMenu()}
             hovercolor="#fbbc04"
           >
@@ -117,6 +118,7 @@ class NavBar extends React.Component {
           <NButton
             href="https://gdsc.community.dev/christ-college-of-engineering-thrissur/"
             target="_blank"
+            rel="noreferrer"
             hovercolor="#4285f4"
             onClick={() => this.closeMenu()}
             active

@@ -1,6 +1,4 @@
 import data from "./EventsData";
-import styled from "styled-components";
-import Page from "../../elements/Page";
 import Event from "./Event";
 
 const colors = ["red", "green", "blue", "yellow"];
