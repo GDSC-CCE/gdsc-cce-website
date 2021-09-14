@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Event from "../elements/Event";
+import Event from "./Events/Event";
 import Page from "../elements/Page";
 import Button from "../elements/Button";
 import { Recent } from "./Events/Events";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TimePill from "./Pill";
+import TimePill from "../../elements/Pill";
 const Card = styled.div`
   margin: 0 10px;
   margin-top: 50px;
@@ -46,6 +46,7 @@ const Title = styled.h3`
 const Description = styled.p`
   font-size: 14px;
   color: ${(props) => props.theme.textAlt};
+  min-height: 70px;
 `;
 const ButtonAlt = styled.div`
   margin: 10px;

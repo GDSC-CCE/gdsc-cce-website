@@ -1,7 +1,7 @@
 import data from "./EventsData";
 import styled from "styled-components";
 import Page from "../../elements/Page";
-import Event from "../../elements/Event";
+import Event from "./Event";
 
 const colors = ["red", "green", "blue", "yellow"];
 let index = 0;
@@ -23,10 +23,11 @@ for (const e of events) {
   if (e.date !== undefined) {
     let d = e.date.split("/");
     d = `${d[1]}/${d[0]}/${d[2]}`;
-    console.log(d);
 
     const date = (new Date(Date.parse(d))).toString().split(" ");
-    console.log(date);
+    if (e.desc.length > 125) {
+      e.desc= e.desc.slice(0,125) + '...';
+    }
 
     Recent.push(
       <Event
