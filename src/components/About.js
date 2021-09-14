@@ -11,8 +11,11 @@ const Page = styled(CPage)`
     height: cacl(100% - 80px);
     flex: 1;
 
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
+    @media(max-width: 500px) {
+      font-size: 30px;
+    }
   }
   color: ${props => props.theme.text};
   display: flex;
@@ -32,8 +35,13 @@ const Circle = styled.div`
 
   background-color: rgba(0, 0, 0, 0.05);
 
+  height: min(74vh, 40vw);
+  width: min(74vh, 40vw);
+  @media(max-width: 1200px) {
   height: min(74vh, 90vw);
   width: min(74vh, 90vw);
+
+  }
   min-height: 320px;
   min-width: 320px;
 
@@ -74,7 +82,10 @@ const Ecardswrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  flex-basis: min(calc(70vh + 20px), calc(80vh + 20px));
+  flex-basis: min(calc(70vh + 20px), calc(40vw + 20px) );
+  @media(max-wdith: 1200px) {
+  flex-basis: min(calc(70vh + 20px), calc(80vw + 20px) );
+  }
   max-width: 80vh; 
   flex-grow:0;
 
@@ -94,8 +105,12 @@ const ECard = styled.div`
   flex-shrink: 1;
   height: 200px;
 
+  height: min(35vh, 20vw);
+  flex-basis: min(35vh, 20vw);
+  @media(max-width: 1200px) {
   height: min(35vh, 40vw);
   flex-basis: min(35vh, 40vw);
+  }
 
   margin: 5px;
   padding: 5px;

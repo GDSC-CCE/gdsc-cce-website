@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import React from "react";
 
-import Button from "../elements/Button";
+import Button from "../../elements/Button";
 import Logo from "./NavLogo";
 import { WbSunny } from "@material-ui/icons";
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import logoimage from '../images/navLogo.svg';
+import logoimage from './images/navLogo.svg';
 
 const LogoNoText= styled.img`
     width: 10vw;

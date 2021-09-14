@@ -8,7 +8,7 @@ const events = [
   {
     name: "Tech Talk",
     date: "15/09/2021",
-    desc: "On this Engineer's Day, CODe, Tinkerhub and GDSC together provide an opportunity to interact with Ms. Farha Kareem, the CEO of Meet Resume and a Software Development Engineer at Amazon. ",
+    desc: "On this Engineer's Day, provide you an opportunity to interact with Ms. Farha Kareem, the CEO of Meet Resume and a Software Development Engineer at Amazon. ",
     link: "https://gdsc.community.dev/events/details/developer-student-clubs-christ-college-of-engineering-thrissur-presents-engineers-day/",
   },
   {
