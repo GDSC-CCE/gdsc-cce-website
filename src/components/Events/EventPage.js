@@ -12,7 +12,7 @@ const Container=styled.div`
     align-items: center;
     flex-wrap: wrap;
     >div {
-        margin: 60px 20px;
+        margin: 60px ;
         margin-top: 80px;
     }
 `;
@@ -34,15 +34,6 @@ function EventPage() {
         <Title>
             Past Events
         </Title>
-        {Past}
-        {Past}
-        {Past}
-        {Past}
-        {Past}
-        {Past}
-        {Past}
-        {Past}
-        {Past}
         {Past}
         </Container>
     );
