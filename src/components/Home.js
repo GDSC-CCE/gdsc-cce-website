@@ -109,6 +109,12 @@ const BottomWrapper = styled.a`
     bottom: 50px;
     left:0;
     right:0;
+    -webkit-tap-highlight-color: transparent;
+
+    margin: 10px 0;
+    :focus {
+        outline:none;
+    }
  `;
 
 function Home(props) {

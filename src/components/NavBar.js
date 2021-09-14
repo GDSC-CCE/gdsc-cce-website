@@ -22,6 +22,9 @@ const Nav = styled.nav`
   z-index: 9;
 
   background-color: ${props => props.theme.bg};
+  @media (max-width: 850px) {
+    height: 70px;
+  }
 `;
 //box-shadow: 1px 1px 2px #cccccc;
 
