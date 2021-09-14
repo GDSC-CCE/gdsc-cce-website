@@ -8,7 +8,7 @@ const Page = styled(CPage)`
     justify-content: center;
     align-items: center;
 
-    height: 100%;
+    height: cacl(100% - 80px);
     flex: 1;
 
     font-size: 30px;
@@ -32,8 +32,8 @@ const Circle = styled.div`
 
   background-color: rgba(0, 0, 0, 0.05);
 
-  height: min(75vh, 90vw);
-  width: min(75vh, 90vw);
+  height: min(74vh, 90vw);
+  width: min(74vh, 90vw);
   min-height: 320px;
   min-width: 320px;
 

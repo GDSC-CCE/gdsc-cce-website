@@ -11,7 +11,6 @@ const Card = styled.div`
   border: 2px solid ${(props) => props.theme.text};
 
   background-color: ${(props) => props.theme.elevatedbg};
-  scroll-snap-align: center;
 
   display: inline-grid;
   grid-row-gap: 10px;
