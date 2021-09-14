@@ -107,7 +107,7 @@ class NavBar extends React.Component {
             Team
           </Button>
           <NButton
-            href=""
+            href="https://github.com/GDSC-CCE"
             target="_blank"
             rel="noreferrer"
             onClick={() => this.closeMenu()}
