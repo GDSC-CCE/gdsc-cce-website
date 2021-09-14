@@ -9,6 +9,7 @@ const LogoNoText= styled.img`
     height: auto;
     display:flex;
     flex-shrink: 1;
+    -webkit-tap-highlight-color: transparent;
 `;
 // const LogoHead =styled.h1`
 //     font-size: 26px;
@@ -45,6 +46,7 @@ const LogoContainer = styled.div`
     display:flex;
     align-items: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 `;
 // const LogoText= styled.div`
 //     text-decoration: none;
