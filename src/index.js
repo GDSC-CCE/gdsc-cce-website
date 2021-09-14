@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled, { ThemeProvider } from "styled-components";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home";
 import Events from "./components/EventHome";
