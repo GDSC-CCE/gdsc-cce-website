@@ -61,7 +61,7 @@ class App extends React.Component {
     };
     return (
       <ThemeProvider theme={theme}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename={window.location.pathname || ''}>
           <ContentWrapper>
             <NavBar
               onClick={() => this.handleClick()}
