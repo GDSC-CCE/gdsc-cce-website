@@ -102,8 +102,8 @@ function TeamCard(props) {
           </TextContainer>
         </FlipCardFront>
         <FlipCardBack>
-          <GitHub style={{color: theme.text}}></GitHub>
-          <LinkedIn style={{color: theme.text}} />
+          <a href={props.g} target="_blank" rel="noreferrer"><GitHub style={{color: theme.text}}></GitHub></a>
+          <a href={props.l} target="_blank" rel="noreferrer"><LinkedIn style={{color: theme.text}} /></a>
         </FlipCardBack>
       </FlipCardInner>
     </Flipcard>

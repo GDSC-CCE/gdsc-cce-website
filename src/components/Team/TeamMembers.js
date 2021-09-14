@@ -31,7 +31,7 @@ function getTeam(group) {
   let list = [];
   let person;
   for (let p of TeamData[group]) {
-    person = <TeamCard name={p.name} avatar={p.avatar} role={p.role}/>;
+    person = <TeamCard name={p.name} avatar={p.avatar} role={p.role} l={p.l} g={p.g}/>;
     list.push(person);
   }
   return list;

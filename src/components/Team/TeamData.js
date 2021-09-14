@@ -20,50 +20,59 @@ const TeamData= {
             {
                 name:"Arun Joseph",
                 role: "Chapter Lead",
-                avatar: arun
+                avatar: arun,
+                l: "https://www.linkedin.com/in/arunjos2000"
 
             },
             {
                 name: "Magniya Davis",
                 role: "Faculty Advisor",
-                avatar: magniya
+                avatar: magniya,
+                l: "https://www.linkedin.com/in/magniya-davis-27a0081ba"
             }
     ],
     'Tech Team': [
         {
             name: "Adityakrishnan",
             role: "Tech Team Lead",
-            avatar: aditya
+            avatar: aditya,
+            l: "https://www.linkedin.com/in/adityakrishnan007"
         },
         {
             name: "Adith P A",
             role: "Tech Team Lead",
-            avatar: adith
+            avatar: adith,
+            l: "https://www.linkedin.com/in/adith-anandhan"
         },
         {
             name: "Sona Shibu",
             role: "Women in Tech Lead",
-            avatar: sona
+            avatar: sona,
+            l: "https://www.linkedin.com/in/sona-2599-shibu"
         },
         {
             name: "Alvin Antony",
             role: "Machine Learning Lead",
-            avatar: alvin
+            avatar: alvin,
+            l: "https://www.linkedin.com/in/alvin-antony-ms-b6959a204"
         },
         {
             name: "Thejas Kiran P S",
             role: "Web Development Lead",
-            avatar: thejas
+            avatar: thejas,
+            l: "https://www.linkedin.com/in/thejaskiranps"
         },
         {
             name: "Jacob Ranjit",
             role: "App Development Lead",
-            avatar: jacob
+            avatar: jacob,
+            l: "https://www.linkedin.com/in/jcupzz"
         },
         {
-            name: "Neeraj K J",
+            name: "Neeraj K G",
             role: "Competitive Programming Lead",
-            avatar: neeraj
+            avatar: neeraj,
+            l: "https://www.linkedin.com/in/neeraj-k-g-347a101b3"
         }
     ],
     'Media Team': [
@@ -71,41 +80,48 @@ const TeamData= {
         {
             name: "Christo Paul",
             role: "Creative Lead",
-            avatar: christo
+            avatar: christo,
+            l: "https://www.linkedin.com/in/christo-paul-9b779a111"
         },
         {
             name: "Karthik Kannan",
             role: "Content Lead",
-            avatar: karthik  
+            avatar: karthik  ,
+            l:"https://www.linkedin.com/in/karthikkan"
         },
         {
             name: "Enric S Neelamkavil",
             role: "Content Creation Lead",
-            avatar: enric
+            avatar: enric,
+            l: "https://www.linkedin.com/in/enric-s-neelamkavil"
         }
     ],
     'Management Team': [
         {
             name: "Leo T Francy",
             role: "Management Lead",
-            avatar: leo
+            avatar: leo,
+            l: "https://www.linkedin.com/in/philips-george-52620b1a4/"
         },
         {
             name: "Philips George",
             role: "Management Co Lead",
-            avatar: philips
+            avatar: philips,
+            l: "https://www.linkedin.com/in/philips-george-52620b1a4/"
         }
     ],
     'Outreach Team': [
         {
             name: "Afzal M A",
             role: "Outreach Lead",
-            avatar: afzal
+            avatar: afzal,
+            l: "https://www.linkedin.com/in/afzal-ma-3b1735199"
         },
         {
             name: "Ajil Ibrahm",
             role: "Outreach Co Lead",
-            avatar: ajil
+            avatar: ajil,
+            l:"https://www.linkedin.com/in/ajil-ibrahim-89953a1a6"
         }
     ]
 }
