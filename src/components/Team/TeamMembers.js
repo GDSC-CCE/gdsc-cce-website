@@ -24,6 +24,7 @@ const TeamContainer = styled.div`
   flex-wrap: wrap;
   flex: 0 0 auto;
   max-width: 900px;
+  width: 100vw;
 `;
 
 function getTeam(group) {
