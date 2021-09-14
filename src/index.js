@@ -75,6 +75,7 @@ class App extends React.Component {
                 <Footer />
               </Route>
               <Route exact path="/team" component={Team} />
+              <Route exact path="/events" component={Events} />
             </Switch>
           </ContentWrapper>
         </Router>
