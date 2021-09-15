@@ -6,16 +6,14 @@ const Flipcard = styled.div`
   background-color: ${(props) => props.theme.bg};
   width: 180px;
   height: 250px;
-  perspective: 1000px; 
+  perspective: 1000px;
   padding: 1px;
   margin: 20px;
-  
+
   @media (max-width: 450px) {
     margin-left: auto;
     margin-right: auto;
-    
   }
-
 `;
 const FlipCardInner = styled.div`
   position: relative;
@@ -77,20 +75,19 @@ const Role = styled.p`
   font-size: 14px;
 `;
 const Avatar = styled.img`
-
-max-width:150px;
-      max-height: 270px;
-      height: 95%;
-      width: 95%;
-      height: 150px;
-      width: 150px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin-top: 3px;
+  max-width: 150px;
+  max-height: 270px;
+  height: 95%;
+  width: 95%;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 3px;
 `;
 
 function TeamCard(props) {
-  const theme= useTheme();
+  const theme = useTheme();
   return (
     <Flipcard>
       <FlipCardInner>
@@ -102,8 +99,12 @@ function TeamCard(props) {
           </TextContainer>
         </FlipCardFront>
         <FlipCardBack>
-          <a href={props.g} target="_blank" rel="noreferrer"><GitHub style={{color: theme.text}}></GitHub></a>
-          <a href={props.l} target="_blank" rel="noreferrer"><LinkedIn style={{color: theme.text}} /></a>
+          <a href={props.g} target="_blank" rel="noreferrer">
+            <GitHub style={{ color: theme.text }}></GitHub>
+          </a>
+          <a href={props.l} target="_blank" rel="noreferrer">
+            <LinkedIn style={{ color: theme.text }} />
+          </a>
         </FlipCardBack>
       </FlipCardInner>
     </Flipcard>

@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import EventPage from "./components/Events/EventPage";
 
-
 const ContentWrapper = styled.main`
   background-color: inherit;
   margin: auto;
@@ -28,7 +27,6 @@ const ContentWrapper = styled.main`
 
   --ms-overflow-style: none;
   scrollbar-width: none;
-
 `;
 
 class App extends React.Component {
@@ -56,17 +54,14 @@ class App extends React.Component {
       redAlt: "#ffebee",
       yellowAlt: "#fff8e1",
       greenAlt: "#e8f5e9",
-      elevatedbg:"hsla(0,0%,100%,.01)",
-      isDark: this.state.isDark
+      elevatedbg: "hsla(0,0%,100%,.01)",
+      isDark: this.state.isDark,
     };
     return (
       <ThemeProvider theme={theme}>
-        <Router basename={window.location.pathname || ''}>
+        <Router basename={window.location.pathname || ""}>
           <ContentWrapper>
-            <NavBar
-              onClick={() => this.handleClick()}
-              iconColor={theme.text}
-            />
+            <NavBar onClick={() => this.handleClick()} iconColor={theme.text} />
             <Switch>
               <Route exact path="/">
                 <Home />

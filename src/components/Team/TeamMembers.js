@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import Banner from "../../elements/Banner";
 import {
-    Stars,
-    Computer,
-    Theaters,
-    BusinessCenter,
-    EmojiPeople,
+  Stars,
+  Computer,
+  Theaters,
+  BusinessCenter,
+  EmojiPeople,
 } from "@material-ui/icons";
 import { useTheme } from "styled-components";
 import TeamCard from "./TeamCard";
@@ -31,22 +31,23 @@ function getTeam(group) {
   let list = [];
   let person;
   for (let p of TeamData[group]) {
-    person = <TeamCard name={p.name} avatar={p.avatar} role={p.role} l={p.l} g={p.g}/>;
+    person = (
+      <TeamCard name={p.name} avatar={p.avatar} role={p.role} l={p.l} g={p.g} />
+    );
     list.push(person);
   }
   return list;
 }
 
-
 function TeamMembers() {
   const theme = useTheme();
   let teamsections = [];
   const teambanner = {
-    Leads:               [theme.text, Stars],
-    "Tech Team":         [theme.blue, Computer],
-    "Management Team":   [theme.green, BusinessCenter],
-    "Media Team":        [theme.red, Theaters],
-    "Outreach Team":     [theme.yellow, EmojiPeople],
+    Leads: [theme.text, Stars],
+    "Tech Team": [theme.blue, Computer],
+    "Management Team": [theme.green, BusinessCenter],
+    "Media Team": [theme.red, Theaters],
+    "Outreach Team": [theme.yellow, EmojiPeople],
   };
   const teams = [
     "Leads",
@@ -56,12 +57,12 @@ function TeamMembers() {
     "Outreach Team",
   ];
   for (let team of teams) {
-      let [color, Icon] = teambanner[team];
+    let [color, Icon] = teambanner[team];
     teamsections.push(
       <TeamSection>
-        <Banner style={{backgroundColor: color}}>
+        <Banner style={{ backgroundColor: color }}>
           <Icon style={{ color: theme.bg, marginRight: "5px" }} />
-          <p style={{ color: theme.bg, fontWeight:"500" }}>{team}</p>
+          <p style={{ color: theme.bg, fontWeight: "500" }}>{team}</p>
         </Banner>
         <TeamContainer>{getTeam(team)}</TeamContainer>
       </TeamSection>

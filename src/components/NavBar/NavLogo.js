@@ -1,15 +1,15 @@
-import styled, {useTheme} from "styled-components";
+import styled, { useTheme } from "styled-components";
 import React from "react";
-import logoimage from './images/navLogo.svg';
-import logoimagedark from './images/navLogoDark.svg';
+import logoimage from "./images/navLogo.svg";
+import logoimagedark from "./images/navLogoDark.svg";
 
-const LogoNoText= styled.img`
-    width: 10vw;
-    max-width: 80px;
-    height: auto;
-    display:flex;
-    flex-shrink: 1;
-    -webkit-tap-highlight-color: transparent;
+const LogoNoText = styled.img`
+  width: 10vw;
+  max-width: 80px;
+  height: auto;
+  display: flex;
+  flex-shrink: 1;
+  -webkit-tap-highlight-color: transparent;
 `;
 // const LogoHead =styled.h1`
 //     font-size: 26px;
@@ -43,24 +43,27 @@ const LogoNoText= styled.img`
 // `;
 
 const LogoContainer = styled.div`
-    display:flex;
-    align-items: center;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 `;
 // const LogoText= styled.div`
 //     text-decoration: none;
 // `;
 
 function Logo() {
-    const dark=useTheme().isDark;
-    const handleClick= () => document.querySelector('main').scrollTo(0,0);
-    return (
-        <LogoContainer href="#home">
-            <LogoNoText onClick = {handleClick} src={dark ? logoimagedark : logoimage} alt="logo"></LogoNoText> 
-        </LogoContainer>
-        
-    );
+  const dark = useTheme().isDark;
+  const handleClick = () => document.querySelector("main").scrollTo(0, 0);
+  return (
+    <LogoContainer href="#home">
+      <LogoNoText
+        onClick={handleClick}
+        src={dark ? logoimagedark : logoimage}
+        alt="logo"
+      ></LogoNoText>
+    </LogoContainer>
+  );
 }
 
 export default Logo;
