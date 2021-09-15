@@ -15,19 +15,22 @@ const events = data;
 let Past = [],
   Upcoming = [],
   Recent = [];
-const now = Date.now();
+let now = new Date();
+
+now = Date.parse(
+  `${now.getMonth() + 1}/${now.getDate()}/${now.toDateString().split(" ")[3]}`
+);
 
 for (const e of events) {
   if (e.date !== undefined) {
     let d = e.date.split("/");
     d = `${d[1]}/${d[0]}/${d[2]}`;
-
+    const parsedDate = Date.parse(d);
     const date = new Date(Date.parse(d)).toString().split(" ");
     if (e.desc.length > 125) {
       e.desc = e.desc.slice(0, 125) + "...";
     }
-
-    Recent.push(
+    const eventCard = (
       <Event
         title={e.name}
         description={e.desc}
@@ -38,45 +41,15 @@ for (const e of events) {
         key={e.name}
       />
     );
-    if (now < Date.parse(d)) {
-      Upcoming.push(
-        <Event
-        key={e.name}
-          title={e.name}
-          description={e.desc}
-          color={nextColor()}
-          time={`${date[2]} ${date[1].toUpperCase()}`}
-          image={e.image}
-          link={e.link}
-        />
-      );
+
+    Recent.push(eventCard);
+    if (now <= parsedDate) {
+      Upcoming.push(eventCard);
     } else {
-      Past.push(
-        <Event
-        key={e.name}
-          title={e.name}
-          description={e.desc}
-          color={nextColor()}
-          time={`${date[2]} ${date[1].toUpperCase()}`}
-          image={e.image}
-          link={e.link}
-        />
-      );
+      Past.push(eventCard);
     }
   } else {
-    Upcoming.push(
-      <Event
-        key={e.name}
-        title={e.name}
-        description={e.desc}
-        color={nextColor()}
-        time={`Coming Soon`}
-        image={e.image}
-        link={e.link}
-        
-      />
-    );
-    Recent.push(
+    const futureEventCard = (
       <Event
         key={e.name}
         title={e.name}
@@ -87,6 +60,8 @@ for (const e of events) {
         link={e.link}
       />
     );
+    Upcoming.push(futureEventCard);
+    Recent.push(futureEventCard);
   }
 }
 Recent = Recent.slice(-3);

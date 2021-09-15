@@ -17,11 +17,10 @@ const events = [
     image: techtalks,
   },
   {
-      name: "Intro to ML",
-      date: undefined,
-      desc: "Want to explore Machine Learning? We got you buddy.",
-      image: ml
+    name: "Intro to ML",
+    date: undefined,
+    desc: "Want to explore Machine Learning? We got you buddy.",
+    image: ml,
   },
 ];
 export default events;
-
