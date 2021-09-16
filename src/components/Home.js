@@ -80,7 +80,7 @@ const College = styled.h2`
         font-size: 4.5vw;
     }
 `;
-const BottomWrapper = styled.a`
+const BottomWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: min-content;
@@ -105,6 +105,9 @@ const BottomWrapper = styled.a`
 
 function Home(props) {
     const theme = useTheme();
+    const scroll=() => {
+        document.querySelector('#about').scrollIntoView();
+    }
     return (
         <Container id="home">
             <TopSection>
@@ -114,7 +117,7 @@ function Home(props) {
                 </LeftWrapper>
                 <RightWrapper src={classlogo} alt="online class image" />
             </TopSection>
-            <BottomWrapper href="#about">
+            <BottomWrapper onClick={scroll}>
                 <Tagline />
                 <ExpandMoreIcon style={{alignSelf:"center",color:theme.text }} />
             </BottomWrapper>
