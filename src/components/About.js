@@ -35,11 +35,11 @@ const Circle = styled.div`
 
   background-color: rgba(0, 0, 0, 0.05);
 
-  height: min(74vh, 40vw);
-  width: min(74vh, 40vw);
+  height: min(70vh, 40vw);
+  width: min(70vh, 40vw);
   @media (max-width: 1200px) {
-    height: min(74vh, 90vw);
-    width: min(74vh, 90vw);
+    height: min(70vh, 90vw);
+    width: min(70vh, 90vw);
   }
   min-height: 320px;
   min-width: 320px;
@@ -79,9 +79,9 @@ const Ecardswrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  flex-basis: min(calc(70vh + 20px), calc(40vw + 20px));
+  flex-basis: min(calc(64vh + 20px), calc(40vw + 20px));
   @media (max-wdith: 1200px) {
-    flex-basis: min(calc(70vh + 20px), calc(80vw + 20px));
+    flex-basis: min(calc(64vh + 20px), calc(80vw + 20px));
   }
   max-width: 80vh;
   flex-grow: 0;
@@ -97,13 +97,12 @@ const Ecardswrapper = styled.div`
 const ECard = styled.div`
   flex-basis: 200px;
   flex-shrink: 1;
-  height: 200px;
 
-  height: min(35vh, 20vw);
-  flex-basis: min(35vh, 20vw);
+  height: min(32vh, 20vw);
+  flex-basis: min(32vh, 20vw);
   @media (max-width: 1200px) {
-    height: min(35vh, 40vw);
-    flex-basis: min(35vh, 40vw);
+    height: min(32vh, 40vw);
+    flex-basis: min(32vh, 40vw);
   }
 
   margin: 5px;
