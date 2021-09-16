@@ -131,7 +131,8 @@ const ECard = styled.div`
   color: ${(props) => props.theme[props.color]};
 
   border: 2px solid ${(props) => props.theme[props.color]};
-  background-color: ${(props) => props.theme[`${props.color}Alt`]};
+  background-color: ${(props) => props.theme.isDark? props.theme.bg: props.theme[`${props.color}Alt`]};
+
 
   border-radius: 10px;
   border-top-left-radius: ${(props) => props.borderTopLeft || "10px"};

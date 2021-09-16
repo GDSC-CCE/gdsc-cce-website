@@ -11,6 +11,8 @@ const Card = styled.div`
 
   border-radius: 10px;
   border: 2px solid ${(props) => props.theme.text};
+  border-color: ${(props) => props.theme[`${props.color}Alt`]};
+
 
   background-color: ${(props) => props.theme.elevatedbg};
 
@@ -49,7 +51,8 @@ const ButtonAlt = styled.a`
   padding: 10px 20px;
   color: ${(props) => props.theme[props.color]};
   border-radius: 5px;
-  background-color: ${(props) => props.theme[`${props.color}Alt`]};
+  background-color: ${(props) => props.theme.isDark? props.theme.bg: props.theme[`${props.color}Alt`]};
+  border: 1px solid ${props => props.theme.isDark? props.theme[props.color] : "white"};
   :hover {
     transform: scale(1.1);
   }
