@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'GoogleSans';
+    src: local('GoogleSans'), url(./GoogleSans-Regular-v1.27.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'GoogleSans';
+    font-weight: 500;
+    src: local('GoogleSans'), url(./GoogleSans-Medium-v1.27.ttf) format('truetype');
+}
+
+
+
+* {
+  font-family: 'GoogleSans';
+}

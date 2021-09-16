@@ -64,7 +64,7 @@ const Heading = styled.h1`
     @media (max-width: 1050px) {
         font-size: 4vw;
     }
-    @media (max-width: 650px) {
+    @media (max-width: 750px) {
         font-size: 5.5vw;
         font-weight: 500;
     }

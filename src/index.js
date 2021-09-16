@@ -10,6 +10,7 @@ import Team from "./components/Team/Team";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import EventPage from "./components/Events/EventPage";
+import './fonts/fonts.css';
 
 const ContentWrapper = styled.main`
   background-color: inherit;
