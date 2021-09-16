@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import CPage from "../elements/Page";
-import Button from "../elements/Button";
-import { Recent } from "./Events/Events";
+import CPage from "../../elements/Page";
+import Button from "../../elements/Button";
+import { Recent } from "./Events";
 
 const Page = styled(CPage)`
   flex-direction: column;

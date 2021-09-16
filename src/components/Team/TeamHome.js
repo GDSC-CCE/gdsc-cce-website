@@ -1,7 +1,7 @@
 import styled, { useTheme } from "styled-components";
-import Button from "../elements/Button";
-import teamimage from "../images/team.svg";
-import Page from "../elements/Page";
+import Button from "../../elements/Button";
+import teamimage from "./images/team.svg";
+import Page from "../../elements/Page";
 
 
 const Container = styled(Page)`
