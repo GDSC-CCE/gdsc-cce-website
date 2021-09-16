@@ -134,10 +134,10 @@ const ECard = styled.div`
 
 
   border-radius: 10px;
-  border-top-left-radius: ${(props) => props.borderTopLeft || "10px"};
-  border-top-right-radius: ${(props) => props.borderTopRight || "10px"};
-  border-bottom-left-radius: ${(props) => props.borderBottomLeft || "10px"};
-  border-bottom-right-radius: ${(props) => props.borderBottomRight || "10px"};
+  border-top-left-radius: ${(props) => props.borderTopLeft || "0px"};
+  border-top-right-radius: ${(props) => props.borderTopRight || "0px"};
+  border-bottom-left-radius: ${(props) => props.borderBottomLeft || "0px"};
+  border-bottom-right-radius: ${(props) => props.borderBottomRight || "0px"};
 `;
 
 const Multi = (
@@ -214,16 +214,16 @@ function Events(props) {
     <RightWrapper>
       Expect these from us
       <Ecardswrapper>
-        <ECard borderTopLeft="0" color="red">
+        <ECard borderBottomRight="10px" color="red">
           Workshops
         </ECard>
-        <ECard borderTopRight="0" color="green">
+        <ECard borderBottomLeft="10px" color="green">
           Bootcamps
         </ECard>
-        <ECard borderBottomLeft="0" color="blue">
+        <ECard borderTopRight="10px" color="blue">
           Tech Talks
         </ECard>
-        <ECard borderBottomRight="0" color="yellow">
+        <ECard borderTopLeft="10px" color="yellow">
           DSC Solution Challenge
         </ECard>
       </Ecardswrapper>
