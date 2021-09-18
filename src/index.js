@@ -34,11 +34,13 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      isDark: false,
+      isDark: (localStorage.getItem("isDark") === 'true') ? true : false,
       isHome: false,
     };
+    if(localStorage.getItem("isDark") === null) localStorage.setItem("isDark","false");
   }
   handleClick() {
+    localStorage.setItem("isDark",!this.state.isDark);
     this.setState({ isDark: !this.state.isDark });
   }
 
