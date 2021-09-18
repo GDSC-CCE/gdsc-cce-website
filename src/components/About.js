@@ -56,6 +56,8 @@ const Circle = styled.div`
   transition: 0.1s;
   :hover {
     transform: scale(1.03);
+    background-color: ${props => props.theme.text};
+    color: ${props => props.theme.bg}
   }
 `;
 const Cwrapper = styled.div``;
