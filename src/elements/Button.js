@@ -7,6 +7,8 @@ const CButton = styled(Link)`
   justify-content: center;
   align-items: center;
 
+  font-size: 16px;
+
   width: 100px;
   height: 45px;
 
@@ -19,6 +21,7 @@ const CButton = styled(Link)`
   text-decoration: none;
   background-color: ${(props) => props.bg};
   color: ${(props) => props.color};
+
   :hover {
     background-color: ${(props) => props.hovercolor};
     border-color: ${(props) => props.hovercolor};
